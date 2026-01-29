@@ -31,12 +31,9 @@
 ---
 
 ## 📸 Screenshots
-```md
 ![Game Start](Screenshots/ss1.PNG)
 ![Winner Screen](Screenshots/ss2.PNG)
-```
 
----
 
 ## 📁 Project Structure
 
