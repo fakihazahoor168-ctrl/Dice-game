@@ -2,16 +2,13 @@ function resetUI() {
   const card1 = document.getElementById("card1");
   const card2 = document.getElementById("card2");
 
-  // Remove highlights
   card1.classList.remove("winner-card", "tie-card");
   card2.classList.remove("winner-card", "tie-card");
 
-  // Hide badges
   document.querySelectorAll(".winner-badge").forEach(badge => {
     badge.classList.add("d-none");
   });
 
-  // Clear text
   winnerText.textContent = "";
 }
 
@@ -101,9 +98,6 @@ else {
   card1.classList.add("tie-card");
   card2.classList.add("tie-card");
 }
-
-
-
     rollBtn.disabled = false;
   }, 1000);
 }
