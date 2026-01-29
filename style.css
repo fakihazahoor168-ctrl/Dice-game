@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+#winner {
+  color: #007bff;
+}
