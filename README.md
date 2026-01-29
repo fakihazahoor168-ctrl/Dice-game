@@ -32,8 +32,8 @@
 
 ## 📸 Screenshots
 ```md
-![Game Start](Screenshots/ss1.png)
-![Winner Screen](Screenshots/ss2.png)
+![Game Start](Screenshots/ss1.PNG)
+![Winner Screen](Screenshots/ss2.PNG)
 ```
 
 ---
