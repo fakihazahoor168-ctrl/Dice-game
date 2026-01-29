@@ -10,3 +10,59 @@ body {
 #winner {
   color: #007bff;
 }
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.rolling {
+  animation: shake 0.1s infinite;
+}
+.winner-card {
+  border: 3px solid #28a745;
+  box-shadow: 0 0 20px rgba(40, 167, 69, 0.7);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.tie-card {
+  border: 3px solid #ffc107;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+}
+.winner-badge {
+  background: linear-gradient(45deg, gold, orange);
+  color: #000;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Confetti */
+
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  opacity: 0.8;
+  animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
